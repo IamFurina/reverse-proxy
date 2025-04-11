@@ -16,7 +16,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://player.focalors.ltd/"  
+          "value": "*"  
         },
         {
           "key": "Access-Control-Allow-Methods",
