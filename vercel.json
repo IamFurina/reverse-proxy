@@ -12,19 +12,19 @@
   ],
   "headers": [
     {
-      "source": "/(.*)",  // 匹配所有以/api/开头的路由
+      "source": "/(.*)",  
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://your-frontend-domain.com"  // 允许的前端域名
+          "value": "https://player.focalors.ltd/"  
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, OPTIONS"  // 允许的HTTP方法
+          "value": "GET, POST, OPTIONS" 
         },
         {
           "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization"  // 允许的请求头
+          "value": "Content-Type, Authorization" 
         }
       ]
     }
