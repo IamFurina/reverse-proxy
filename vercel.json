@@ -9,5 +9,24 @@
     { "source": "/:protocol/:match/:url*/", "destination": ":protocol://:match/:url*/" },
     { "source": "/:protocol*/:match/:url*", "destination": ":protocol://:match/:url*" },
     { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",  // 匹配所有以/api/开头的路由
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://your-frontend-domain.com"  // 允许的前端域名
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"  // 允许的HTTP方法
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"  // 允许的请求头
+        }
+      ]
+    }
   ]
 }
